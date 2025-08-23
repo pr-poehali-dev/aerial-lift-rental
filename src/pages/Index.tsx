@@ -72,7 +72,7 @@ export default function Index() {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-foreground">АвтоВышка Профи</h1>
-                <p className="text-sm text-muted-foreground">Аренда автовышек 18-45м</p>
+                <p className="text-sm text-muted-foreground">Аренда автовышек в Нижегородской области</p>
               </div>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
@@ -98,10 +98,10 @@ export default function Index() {
             </Badge>
             <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Аренда автовышек
-              <span className="text-accent block">от 18 до 45 метров</span>
+              <span className="text-accent block">в Нижегородской области</span>
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-white/90">
-              Полноприводные и шоссейные автовышки для любых высотных работ
+              Полноприводные и шоссейные автовышки по всей Нижегородской области
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -257,7 +257,7 @@ export default function Index() {
                   </h4>
                   <div className="grid md:grid-cols-2 gap-4 text-sm">
                     <div className="flex justify-between">
-                      <span>Подача техники по городу:</span>
+                      <span>Подача по Нижнему Новгороду:</span>
                       <span className="font-medium">2 000 ₽</span>
                     </div>
                     <div className="flex justify-between">
@@ -269,7 +269,7 @@ export default function Index() {
                       <span className="font-medium">+30%</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>За город (за км):</span>
+                      <span>Выезд по области (за км):</span>
                       <span className="font-medium">45 ₽</span>
                     </div>
                   </div>
@@ -355,7 +355,7 @@ export default function Index() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Адрес</h4>
-                      <p className="text-foreground">г. Москва, ул. Промышленная, 15</p>
+                      <p className="text-foreground">г. Нижний Новгород, ул. Промышленная, 15</p>
                       <p className="text-sm text-muted-foreground">Парк строительной техники</p>
                     </div>
                   </div>
@@ -422,7 +422,7 @@ export default function Index() {
               <div className="space-y-2 text-sm text-white/80">
                 <p>+7 (999) 123-45-67</p>
                 <p>info@avtovyshka-profi.ru</p>
-                <p>г. Москва, ул. Промышленная, 15</p>
+                <p>г. Нижний Новгород, ул. Промышленная, 15</p>
               </div>
             </div>
           </div>
