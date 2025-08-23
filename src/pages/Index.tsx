@@ -12,7 +12,7 @@ export default function Index() {
       price: "от 1 500 ₽/час",
       type: "Шоссейная/Полноприводная",
       description: "Компактная автовышка для работы на высоте до 18 метров",
-      image: "img/728b52fe-a6f4-4565-9be8-e6bbd0295403.jpg",
+      image: "img/0c435d65-fea9-4b00-956f-b92b3cef8bf9.jpg",
       features: ["4WD привод", "Стабилизаторы", "Корзина 2 чел."]
     },
     {
