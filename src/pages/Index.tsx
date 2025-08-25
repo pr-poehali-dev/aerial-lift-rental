@@ -104,13 +104,11 @@ export default function Index() {
               Полноприводные и шоссейные автовышки по всей Нижегородской области
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Icon name="Calculator" size={20} className="mr-2" />
-                Рассчитать стоимость
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-secondary">
-                <Icon name="FileText" size={20} className="mr-2" />
-                Каталог техники
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-secondary" asChild>
+                <a href="#catalog">
+                  <Icon name="FileText" size={20} className="mr-2" />
+                  Каталог техники
+                </a>
               </Button>
             </div>
             <div className="flex flex-wrap justify-center gap-8 mt-12 text-white/90">
@@ -258,19 +256,19 @@ export default function Index() {
                   <div className="grid md:grid-cols-2 gap-4 text-sm">
                     <div className="flex justify-between">
                       <span>Подача по Нижнему Новгороду:</span>
-                      <span className="font-medium">2 000 ₽</span>
+                      <span className="font-medium">бесплатно</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Работа в выходные/праздники:</span>
                       <span className="font-medium">+20%</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Ночная смена (22:00-06:00):</span>
-                      <span className="font-medium">+30%</span>
+                      <span>Ночная смена:</span>
+                      <span className="font-medium">по договорённости</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Выезд по области (за км):</span>
-                      <span className="font-medium">45 ₽</span>
+                      <span>Выезд по области:</span>
+                      <span className="font-medium">40км - 1 час работы</span>
                     </div>
                   </div>
                 </div>
