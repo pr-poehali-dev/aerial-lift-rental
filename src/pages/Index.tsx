@@ -71,7 +71,7 @@ export default function Index() {
                 <Icon name="Truck" className="text-primary-foreground" size={24} />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-foreground">АвтоВышка Профи</h1>
+                <h1 className="text-xl font-bold text-foreground">ООО "Оптима Групп"</h1>
                 <p className="text-sm text-muted-foreground">Аренда автовышек в Нижегородской области</p>
               </div>
             </div>
@@ -116,7 +116,7 @@ export default function Index() {
             <div className="flex flex-wrap justify-center gap-8 mt-12 text-white/90">
               <div className="flex items-center">
                 <Icon name="Clock" size={20} className="mr-2 text-accent" />
-                Работаем 24/7
+                Работаем с 07:00 до 24:00
               </div>
               <div className="flex items-center">
                 <Icon name="Shield" size={20} className="mr-2 text-accent" />
@@ -340,8 +340,8 @@ export default function Index() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Телефон</h4>
-                      <p className="text-2xl font-bold text-primary">+7 (999) 123-45-67</p>
-                      <p className="text-sm text-muted-foreground">Круглосуточно, без выходных</p>
+                      <p className="text-2xl font-bold text-primary">+7 (905) 190-28-91</p>
+                      <p className="text-sm text-muted-foreground">с 07:00 до 24:00, без выходных</p>
                     </div>
                   </div>
                 </CardContent>
@@ -355,8 +355,8 @@ export default function Index() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Адрес</h4>
-                      <p className="text-foreground">г. Нижний Новгород, ул. Промышленная, 15</p>
-                      <p className="text-sm text-muted-foreground">Парк строительной техники</p>
+                      <p className="text-foreground">г. Нижний Новгород, ул. Долгополова, д. 79, оф 25</p>
+                      <p className="text-sm text-muted-foreground">Офис компании</p>
                     </div>
                   </div>
                 </CardContent>
@@ -370,8 +370,8 @@ export default function Index() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Режим работы</h4>
-                      <p className="text-foreground">24 часа в сутки</p>
-                      <p className="text-sm text-muted-foreground">Включая выходные и праздники</p>
+                      <p className="text-foreground">с 07:00 до 24:00</p>
+                      <p className="text-sm text-muted-foreground">Без выходных</p>
                     </div>
                   </div>
                 </CardContent>
@@ -390,7 +390,7 @@ export default function Index() {
                 <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                   <Icon name="Truck" className="text-primary-foreground" size={20} />
                 </div>
-                <span className="text-xl font-bold">АвтоВышка Профи</span>
+                <span className="text-xl font-bold">ООО "Оптима Групп"</span>
               </div>
               <p className="text-white/80 text-sm">
                 Профессиональная аренда автовышек для высотных работ любой сложности
@@ -420,15 +420,15 @@ export default function Index() {
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="space-y-2 text-sm text-white/80">
-                <p>+7 (999) 123-45-67</p>
-                <p>info@avtovyshka-profi.ru</p>
-                <p>г. Нижний Новгород, ул. Промышленная, 15</p>
+                <p>+7 (905) 190-28-91</p>
+                <p>info@optima-group.ru</p>
+                <p>г. Нижний Новгород, ул. Долгополова, д. 79, оф 25</p>
               </div>
             </div>
           </div>
           
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm text-white/60">
-            <p>&copy; 2024 АвтоВышка Профи. Все права защищены.</p>
+            <p>&copy; 2024 ООО "Оптима Групп". Все права защищены.</p>
           </div>
         </div>
       </footer>
