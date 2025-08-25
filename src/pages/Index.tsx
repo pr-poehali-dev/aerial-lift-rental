@@ -296,36 +296,59 @@ export default function Index() {
                 <CardDescription>Мы перезвоним в течение 5 минут</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div>
-                  <label className="text-sm font-medium mb-2 block">Имя</label>
-                  <input 
-                    type="text" 
-                    placeholder="Ваше имя"
-                    className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                  />
-                </div>
-                <div>
-                  <label className="text-sm font-medium mb-2 block">Телефон</label>
-                  <input 
-                    type="tel" 
-                    placeholder="+7 (___) ___-__-__"
-                    className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
-                  />
-                </div>
-                <div>
-                  <label className="text-sm font-medium mb-2 block">Высота работ</label>
-                  <select className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
-                    <option>Выберите высоту</option>
-                    <option>18 метров</option>
-                    <option>22 метра</option>
-                    <option>28 метров</option>
-                    <option>Другая высота</option>
-                  </select>
-                </div>
-                <Button className="w-full bg-primary hover:bg-primary/90" size="lg">
-                  <Icon name="Send" size={20} className="mr-2" />
-                  Отправить заявку
-                </Button>
+                <form onSubmit={(e) => {
+                  e.preventDefault();
+                  const formData = new FormData(e.target as HTMLFormElement);
+                  const name = formData.get('name') || 'Не указано';
+                  const phone = formData.get('phone') || 'Не указан';
+                  const height = formData.get('height') || 'Не указана';
+                  
+                  const subject = encodeURIComponent('Заявка на аренду автовышки от ' + name);
+                  const body = encodeURIComponent(
+                    `Новая заявка на аренду автовышки\n\n` +
+                    `Имя: ${name}\n` +
+                    `Телефон: ${phone}\n` +
+                    `Высота работ: ${height}\n\n` +
+                    `Отправлено с сайта ООО "Оптима Групп"`
+                  );
+                  
+                  window.location.href = `mailto:optima1920@gmail.com?subject=${subject}&body=${body}`;
+                }}>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Имя</label>
+                    <input 
+                      name="name"
+                      type="text" 
+                      placeholder="Ваше имя"
+                      required
+                      className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Телефон</label>
+                    <input 
+                      name="phone"
+                      type="tel" 
+                      placeholder="+7 (___) ___-__-__"
+                      required
+                      className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Высота работ</label>
+                    <select name="height" className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+                      <option value="">Выберите высоту</option>
+                      <option value="18 метров">18 метров</option>
+                      <option value="22 метра">22 метра</option>
+                      <option value="28 метров">28 метров</option>
+                      <option value="Другая высота">Другая высота</option>
+                    </select>
+                  </div>
+                  <Button type="submit" className="w-full bg-primary hover:bg-primary/90" size="lg">
+                    <Icon name="Send" size={20} className="mr-2" />
+                    Отправить заявку
+                  </Button>
+                </form>
               </CardContent>
             </Card>
             
