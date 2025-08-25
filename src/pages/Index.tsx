@@ -12,7 +12,7 @@ export default function Index() {
       price: "от 1 500 ₽/час",
       type: "Шоссейная/Полноприводная",
       description: "Компактная автовышка для работы на высоте до 18 метров",
-      image: "img/0c435d65-fea9-4b00-956f-b92b3cef8bf9.jpg",
+      image: "https://cdn.poehali.dev/files/0b05dee7-5825-4bfe-a4bb-e4448f8938cf.jpg",
       features: ["4WD привод", "Стабилизаторы", "Корзина 2 чел."]
     },
     {
@@ -22,7 +22,7 @@ export default function Index() {
       price: "от 1 900 ₽/час",
       type: "Шоссейная/Полноприводная",
       description: "Универсальная автовышка для большинства высотных работ",
-      image: "img/6fb6b865-d8a7-4084-9df5-6e7fe0bb3af3.jpg",
+      image: "https://cdn.poehali.dev/files/6f4647d9-983b-4a3a-be3b-f20d8f0b6d68.jpg",
       features: ["Поворотная стрела", "Выносные опоры", "Грузоподъемность 200кг"]
     },
     {
@@ -32,7 +32,7 @@ export default function Index() {
       price: "от 2 200 ₽/час",
       type: "Полноприводная",
       description: "Мощная автовышка для сложных высотных работ",
-      image: "img/e36659b1-2eb4-4ffe-81a2-0bed6a70be90.jpg",
+      image: "https://cdn.poehali.dev/files/bb6a944b-cbe8-4038-8007-c9e4bb73d23e.jpg",
       features: ["Телескопическая стрела", "Повышенная устойчивость", "Всепогодное использование"]
     }
   ];
@@ -340,7 +340,7 @@ export default function Index() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Телефон</h4>
-                      <p className="text-2xl font-bold text-primary">+7 (905) 190-28-91</p>
+                      <p className="text-2xl font-bold text-primary">+7 (901) 801-69-23</p>
                       <p className="text-sm text-muted-foreground">с 07:00 до 24:00, без выходных</p>
                     </div>
                   </div>
@@ -420,7 +420,7 @@ export default function Index() {
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="space-y-2 text-sm text-white/80">
-                <p>+7 (905) 190-28-91</p>
+                <p>+7 (901) 801-69-23</p>
                 <p>info@optima-group.ru</p>
                 <p>г. Нижний Новгород, ул. Долгополова, д. 79, оф 25</p>
               </div>
