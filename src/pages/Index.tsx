@@ -30,7 +30,7 @@ export default function Index() {
       name: "Автовышка 28м",
       height: "28 метров",
       price: "от 2 200 ₽/час",
-      type: "Полноприводная",
+      type: "Шоссейная/Полноприводная",
       description: "Мощная автовышка для сложных высотных работ",
       image: "https://cdn.poehali.dev/files/bb6a944b-cbe8-4038-8007-c9e4bb73d23e.jpg",
       features: ["Телескопическая стрела", "Повышенная устойчивость", "Всепогодное использование"]
@@ -104,7 +104,7 @@ export default function Index() {
               Полноприводные и шоссейные автовышки по всей Нижегородской области
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-secondary" asChild>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
                 <a href="#catalog">
                   <Icon name="FileText" size={20} className="mr-2" />
                   Каталог техники
@@ -242,7 +242,7 @@ export default function Index() {
                       </div>
                       <div className="text-right">
                         <div className="text-2xl font-bold text-primary">{item.price}</div>
-                        <div className="text-sm text-muted-foreground">минимум 4 часа</div>
+                        <div className="text-sm text-muted-foreground">{item.id === 3 ? 'минимум 8 часов' : 'минимум 4 часа'}</div>
                       </div>
                     </div>
                   ))}
